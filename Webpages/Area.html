@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Area of Triangle</title>
+</head>
+<body>
+
+    <nav> 
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="../WebPages/IsTriangle.html">IsTriangle?</a>
+            </li>
+        
+            <li class="list-item-inline">
+                <a class="link" href="../WebPages/Quiz.html">Quiz</a>
+            </li>
+        
+            <li class="list-item-inline">
+                <a class="link" href="../WebPages/Hypotenuse.html">Hypotenuse</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="/Index.html">Home</a>
+            </li>
+        </ul>
+        </nav>
+
+    <main class="calculate-area">
+        <h1>Calculate Area of a Triangle:</h1>
+
+        <form id="calculate-area">
+
+        <label class="input-label" for="first-side">
+            <p>Enter first side of a triangle</p>
+            <input class="input-text" required type="number" id="first-side" />
+        </label>
+          
+        <label class="input-label" for="second-side">
+            <p>Enter second side of a triangle</p>
+            <input class="input-text" required type="number" id="second-side" />
+        </label>
+          
+        <label class="input-label" for="third-side">
+            <p>Enter third side of a triangle</p>
+            <input class="input-text" required type="number" id="third-side" />
+        </label>
+          
+        <button class="checkButton" type="submit">Calculate</button>
+        
+        </form>
+        <p class="output calculate-area-output" id="output"></p>
+      
+    </main>
+
+    <script src="/Area.js"></script>    
+</body>
+</html>
