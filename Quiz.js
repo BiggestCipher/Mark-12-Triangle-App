@@ -14,14 +14,18 @@ function calculateScore() {
     const formResults = new FormData(quizform);
     let score = 0,
       index = 0;
+      totalValues= 0;
     for (let value of formResults.values()) {
+      totalValues =totalValues+1;
       if (value === correctAnswers[index]) {
         score = score + 1;
       }
       index = index + 1;
     }
-    // console.log("The score is "+score);
+    if(totalValues<5){
+      outputEl.innerText = "Please Answer all the Questions before submitting."
+    } else {
     outputEl.innerText = "The score is " + score;
-  }
+  }}
   
   submitBtn.addEventListener("click", calculateScore);
